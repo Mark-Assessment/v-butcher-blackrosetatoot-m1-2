@@ -1,39 +1,127 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Black Rose Tattoo**
 
-Welcome,
+Visit the deployed website: [Black Rose Tattoo]()
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## **Project Description**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+This website has been built to improve on the current, existing squarespace website for Black Rose Tattoo, I have undertaken this project as the shop belongs to a good friend of mine, also I have a passion for tattoos and this is the studio that I go to.
+I wanted to create this website to improve on the aesthetics and accessibility for information about Black Rose Tattoo, its tattoo artists and booking appointments.
 
-## Codeanywhere Reminders
+[YouGov](https://yougov.co.uk/society/articles/43350-should-visible-tattoos-be-allowed-workplace) wrote an article about tattoos and the workplace, which showed that a 1/4 of Britons have tattoos and this is likely to keep growing with the acceptance of tattoos becoming a more widespread global opinion in recent years.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## CONTENTS
 
-`python3 -m http.server`
+* [User Experience](#user-experience-ux)
+  * [User Stories](#user-stories)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+    * [The Home Page](#the-home-page)
+    * [The Game Page](#the-game-page)
+    * [Future Implementations](#future-implementations)
+  * [Accessibility](#accessibility)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-`http_server`
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [Testing](#testing)
+  * [Solved Bugs](#solved-bugs)
+  * [Known Bugs](#known-bugs)
+  
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## User Experience UX
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- ### User Stories
 
-To log into the Heroku toolbelt CLI:
+- #### First Time Visitor Goals
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+        1. As a first time visitor, I want to be able to navigate through the site and find the content I want without difficulty.
+        2. As a first time visitor, I want to be able to book in easily.
+        3. As a first time visitor, I want to have initial tattoo questions answered on a page so I don't have to contact anyone first.
+        4. As a first time visitor, I would like to view current/existing work by the artist.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- #### Returning Visitor Goals
+
+        1. As a returning visitor, I want to be able to easily and quickly find to contact details again.
+        2. As a returning visitor, I want to be able to gain quick access the artists' up-to-date work.
+
+* #### Frequent Visitor Goals
+
+        1. As a frequent visitor, I want to be able to see if any new artists have been added to the studio.
 
 ---
 
-Happy coding!
+- ### Design
+
+- #### Colour Scheme
+
+  The main colours used will be grey and pink, this follows the company's aesthetic and branding of being female owned and has been used on the previous site, providing some familiarity to anyone who uses the website already.
+
+
+- #### Typography
+  Google Fonts was used to import the chosen fonts for use on the site.
+
+  - For the Page Title I have used the google font Pirata One. Pirata One is font close to black lettering which is a calligraphy style commonly used by tattoo artists. 
+
+  - I have chosen Pirata One, Oswald and Montserrat as my fonts, with a back up of sans-serif if those fonts do not work.
+
+- #### Imagery
+
+  - This is an important aspect of this website as tattoo's are a visual commodity, images will showcase the studios, artists work and also artists themselves.
+
+- #### Wireframes
+
+  - Home Page Wireframes [View]()
+  - FAQ Page Wireframe [View]()
+  - Contact Us Page Wireframe [View]()
+  - Booking In Page Wireframe [View]()
+
+## Technology Used
+
+This project is written using HTML & CSS using the Cloud IDE and bootstrap templates, currently being hosted on GitHub.
+
+## Features
+
+- Responsive on all devices, using a mobile first approach.
+- Interactive Menus and links
+- Street Map
+
+### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+### Frameworks, Libraries & Programs Used
+
+   [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+   [Hover.css:](https://ianlunn.github.io/Hover/)
+    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+   [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+   [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+   [jQuery:](https://jquery.com/)
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+   [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+[GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+   [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
