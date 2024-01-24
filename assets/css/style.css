@@ -1,2 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pirata+One&display=swap');
+/* ----------------------------------------Special paddings/margins/text */
+
+/*--------------------------------------------Heading*/
+
+#logo {
+   width: 97%;
+   padding-left: 50px;
+}
+
+.logo-break {
+    margin-top: 80px;
+}
+
+/*--------------------------------------------Colors*/
+
+body {
+    background-color: #004c4c;
+}
+
+nav ul li a {
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.nav-background {
+    background-color: #013636;
+}
+
+/* ----------------------------------------Footer */
+
+/* ----------------------------------------Hero Image */
+
+/*-----------------------------------------Nav */
+
+nav {
+    position: fixed;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navlink {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+  }
+
+/* ----------------------------------------Body */
+
+body {
+    font-family: Pirata+One, Oswald, Montserrat;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
+    width: 70%;
+  }
 
