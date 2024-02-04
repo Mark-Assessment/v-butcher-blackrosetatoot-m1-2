@@ -24,25 +24,36 @@
 
 /*--------------------------------------------Heading*/
 
+.header-logo {
+    min-height: 0;
+    min-width: 0;
+    flex: 0 0 auto;
+}
+
 #header {
-    z-index: 1; 
+    width: 100%;
+    z-index: 1;
 }
 
 .mini-logo {
-    height: 100px;
-    width: 100px;
+    width: 10%;
+    align-self: flex-start;
+    justify-content: center;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 0;
 }
 
 #text-logo {
-   max-width: 97%;
-   padding-left: 50px;
-}
-
-.logo-break {
-    margin-top: 80px;
+   width: 100%;
 }
 
 /*-----------------------------------------Nav */
+
+nav {
+    width: 100%;
+}
 
 #menu a:hover{
     border-bottom: 1.5px solid white;
@@ -52,18 +63,15 @@
     border-bottom: 1.5px solid white;
 }
 
-nav .navbar-nav {
+#menu {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 2rem;
 }
-
-/*--------------look into these below as not sure if this will be responsive---*/
-
-/*.navlink {
-    margin-left: 140px;
-    margin-right: 140px;
-    margin-bottom: 50px;
-}*/
 
 nav ul li a {
     text-decoration: none;
@@ -86,6 +94,10 @@ h3 {
 
 p {
     text-align: center;
+}
+
+.hero-image {
+    align: center;
 }
 
 
@@ -136,14 +148,6 @@ ul {
     z-index: 1;
 }
 
-
-
-.contact-details {
-    font-size: 12px;
-    display: flex;
-    align-items: flex-start;
-}
-
 /*--------------------------------------------Colors*/
 
 body {
@@ -155,7 +159,7 @@ nav ul li a {
     color: white;
 }
 
-.nav-wrapper {
+nav {
     background-color: #013636;
 }
 
