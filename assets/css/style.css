@@ -12,31 +12,29 @@
     box-sizing: border-box;
   }
 
-  body {
+  .flex-container {
+    display: flex;
+  }
+
+  /*body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
-  footer {
-    margin-top: auto;
   }
 
 /*--------------------------------------------Heading*/
 
 #header {
-    max-width: 100%;
-    max-height: 85%;
-    z-index: 1;
+    z-index: 1; 
 }
 
-#mini-logo {
+.mini-logo {
     height: 100px;
     width: 100px;
 }
 
 #text-logo {
-   width: 97%;
+   max-width: 97%;
    padding-left: 50px;
 }
 
@@ -54,36 +52,24 @@
     border-bottom: 1.5px solid white;
 }
 
-.navbar {
-    height: 16px;
+nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
 }
 
-nav {
-    position: fixed;
-}
+/*--------------look into these below as not sure if this will be responsive---*/
 
-.navlink {
-    margin-left: 149px;
-    margin-right: 149px;
+/*.navlink {
+    margin-left: 140px;
+    margin-right: 140px;
     margin-bottom: 50px;
-    
-}
-
-nav ul li {
-    display: inline-block;
-    text-transform: uppercase;
-}
+}*/
 
 nav ul li a {
     text-decoration: none;
-    display: inline-block;
     font-size: 15px;
     font-family: Montserrat !important;
-}
-
-ul li a {
-    list-style-type: none;
-    float: right;
+    text-transform: uppercase;
 }
 
 /* ----------------------------------------Hero Image */
@@ -94,86 +80,75 @@ body {
     font-family: Montserrat;
 }
 
-hr {
-    display: block;
-    margin: 8px auto 8px auto;
-    border-style: ridge;
-    border-width: 1px;
-    border-color: black;
-    width: 70%;
-  }
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 
 /* ----------------------------------------Footer */
+
+.home-icon {
+    align-self: center;
+    margin: 1rem;
+}
+
+div.footer.flex-container {
+    justify-content: space-evenly;
+}
+
+.footer-logo {
+    align-self: flex-start;
+}
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 200;
+}
+
+.contact-details h6 {
+    font-size: 16px;
+}
 
 #mini-logo-footer {
     height: 100px;
     width: 100px;
-    margin-top: 40px;
 }
 
+.social-networks i {
+    font-size: 70px; 
+}
+
+ul {
+    list-style-type: none; 
+}
+
+/*
 #footer {
     max-width: 100%;
     max-height: 85%;
     z-index: 1;
 }
 
-.contact-details h3 {
-    font-size: 16px;
-}
 
-.social-networks {
-    text-align: right;
-}
-
-.social-networks li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 70px;
-    color: white;
-    padding-right: 10px;
-    padding-bottom: 0;
-}
-
-footer {
-    height: 85%;
-    width: 100%;
-}
-
-#footer {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.footer {
-    float: left;
-}
-
-.home-icon {
-    padding-top: 20px;
-    padding-left: 75px;
-}
 
 .contact-details {
-    float: right;
-    padding-right: 1550px;
-    text-align: left;
-    color: white;
     font-size: 12px;
-}
-
-#map {
-    float: left;
-    border: 0;
-    margin-left: 500px;
-    position: absolute;
+    display: flex;
+    align-items: flex-start;
 }
 
 /*--------------------------------------------Colors*/
 
 body {
     background-color: #004c4c;
+    color: white;
 }
 
 nav ul li a {
@@ -184,8 +159,16 @@ nav ul li a {
     background-color: #013636;
 }
 
-.footer {
+footer {
     background-color: #013636;
+}
+
+.contact-details {
+    color: white;
+}
+
+.social-networks i {
+    color: white;
 }
 
 /*--------------------------------------------Media Queries*/
@@ -207,7 +190,7 @@ nav ul li a {
         margin-bottom: 20px;
         line-height: 25px;
     }
-}*/
+}
 
 .site {
     display: flex;
