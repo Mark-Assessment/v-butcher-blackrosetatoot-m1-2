@@ -81,10 +81,10 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-/* ----------------------------------------Hero Image */
+/* ---------------------------------------- Main Image */
 
-.hero-image {
-    background: url('/assets/images/studio-front-desk.png') no-repeat center;
+.studio-image {
+    background: url('../images/studio-front-desk.png') no-repeat center;
     height: 80vh;
     width: 100%;
     -webkit-background-size: auto;
@@ -98,31 +98,45 @@ nav ul li a {
     position: relative;
 }
 
-.image-overlay {
+/*.image-overlay {
     width: 77.1%;
     height: 80vh;
     background-color: rgba(178, 216, 216, 0.5);
-}
+    border: 3px solid #b2d8d8;
+}*/
 
-.hero-button {
+.booking-button {
     text-align: center;
-    top: 50%;
+    top: 80%;
     position: relative;
 }
 
 button {
-    background-color: #b2d8d8;
     font-family: 'Pirata One';
     font-size: 60px;
-    color: #004c4c;
     border-radius: 8px;
     border: 2px #66b2b2;
     padding: 1rem; 
+    margin-top: 10rem;
 }
 
 button a {
     text-decoration: none;
-    color: #004c4c;
+}
+
+.studio-info {
+    width: 48rem;
+    border-radius: 8px;
+    padding: 2em;
+    margin-top: 10rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 /* ----------------------------------------Body */
@@ -135,14 +149,6 @@ body {
     font-family: Montserrat;
 }
 
-h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
 
 /* ----------------------------------------Footer */
 
@@ -152,7 +158,7 @@ p {
 }
 
 div.footer.flex-container {
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .footer-logo {
@@ -170,6 +176,7 @@ div.footer.flex-container {
     flex-direction: column;
     align-items: center;
     font-weight: 200;
+    flex-wrap: wrap;
 }
 
 .contact-details h6 {
@@ -181,12 +188,34 @@ div.footer.flex-container {
     width: 7em;
 }
 
+.laser-logo {
+    display: flex;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    flex-wrap: wrap;
+}
+
 .social-networks i {
     font-size: 70px; 
 }
 
 ul {
     list-style-type: none; 
+}
+
+.opening-times h6 {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.stefania-logo {
+    padding-top: 1em;
+}
+
+.social-buttons {
+    padding-top: 1em;
 }
 
 /*--------------------------------------------Colors*/
@@ -197,6 +226,20 @@ ul {
 
 .header-logo {
     background-color: #006666;
+}
+
+button {
+    color: #004c4c;
+    background-color: rgba(178, 216, 216, 0.85);
+}
+
+button a {
+    color: #004c4c;
+}
+
+.studio-info {
+    color: #b2d8d8;
+    background-color: rgba(0, 128, 128, 0.85);
 }
 
 body {
