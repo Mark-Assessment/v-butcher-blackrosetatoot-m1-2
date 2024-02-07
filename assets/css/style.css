@@ -48,11 +48,73 @@
 hr {
     background-color: #013636;
     height: 2px;
-    width: 678px;
+    width: 50%;
     margin: auto;    
 }
 
 /*-----------------------------------------Nav */
+
+.menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+#hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 2rem;
+}
 
 nav {
     width: 100%;
@@ -76,7 +138,7 @@ nav {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: Montserrat !important;
     text-transform: uppercase;
 }
@@ -85,7 +147,7 @@ nav ul li a {
 
 .studio-image {
     background: url('../images/studio-front-desk.png') no-repeat center;
-    height: 80vh;
+    min-height: 100%;
     width: 100%;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -99,8 +161,8 @@ nav ul li a {
 }
 
 /*.image-overlay {
-    width: 77.1%;
-    height: 80vh;
+    width: 100%;
+    height: 80%;
     background-color: rgba(178, 216, 216, 0.5);
     border: 3px solid #b2d8d8;
 }*/
@@ -113,7 +175,7 @@ nav ul li a {
 
 button {
     font-family: 'Pirata One';
-    font-size: 60px;
+    font-size: 4rem;
     border-radius: 8px;
     border: 2px #66b2b2;
     padding: 1rem; 
@@ -127,8 +189,9 @@ button a {
 .studio-info {
     width: 48rem;
     border-radius: 8px;
-    padding: 2em;
+    padding: 2rem;
     margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 h3 {
@@ -167,8 +230,8 @@ div.footer.flex-container {
     flex-flow: row nowrap;
     flex-direction: row;
     padding: 1rem;
-    height: 8em;
-    width: 8em;
+    height: 8rem;
+    width: 8rem;
 }
 
 .contact-details {
@@ -180,12 +243,12 @@ div.footer.flex-container {
 }
 
 .contact-details h6 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #mini-logo-footer {
-    height: 7em;
-    width: 7em;
+    height: 7rem;
+    width: 7rem;
 }
 
 .laser-logo {
@@ -197,7 +260,7 @@ div.footer.flex-container {
 }
 
 .social-networks i {
-    font-size: 70px; 
+    font-size: 4rem; 
 }
 
 ul {
@@ -205,17 +268,17 @@ ul {
 }
 
 .opening-times h6 {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 2rem;
 }
 
 .stefania-logo {
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 .social-buttons {
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 /*--------------------------------------------Colors*/
@@ -271,6 +334,47 @@ footer {
 }
 
 /*--------------------------------------------Media Queries*/
+
+@media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    #menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    #menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
 
 /*@media screen and (max-width: 1393px) {
     #nav-wrapper {
