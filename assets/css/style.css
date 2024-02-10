@@ -18,25 +18,11 @@
 
 /*--------------------------------------------Heading*/
 
-.header-logo {
-    min-height: 0;
-    min-width: 0;
-    flex: 0 0 auto;
-}
-
-#header {
+.header {
+    display: flex;
     width: 100%;
-    z-index: 1;
-}
-
-.mini-logo {
-    align-self: flex-start;
-    justify-content: center;
-    flex-flow: row nowrap;
-    flex-direction: row;
-    padding: 1rem;
-    height: 8em;
-    width: 8em;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #text-logo {
@@ -47,7 +33,6 @@
 }
 
 hr {
-    background-color: #013636;
     height: 2px;
     width: 50%;
     margin: auto;    
@@ -55,29 +40,38 @@ hr {
 
 /*-----------------------------------------Nav */
 
+.mini-logo {
+    padding: 1rem;
+    height: 8em;
+    width: 8em;
+}
+
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: flex-end;
-    padding-bottom: 1rem;
+    justify-content: space-between;
     width: 100%;
     height: 8rem;
-
+    margin-top: 0;
 }
 
 #menu a:hover{
     border-bottom: 1.5px solid white;
+    padding-bottom: 1rem;
 }
 
 .active {
     border-bottom: 1.5px solid white;
+    padding-bottom: 1rem;
 }
 
 #menu {
-    display: flex;
-    flex-direction: row;
-    gap: 15rem;
+        display: grid;
+        grid-auto-flow: column;
+        list-style-type: none;
+        column-gap: 18rem;
+        margin-right: 4rem;
 }
 
 nav ul li a {
@@ -85,6 +79,15 @@ nav ul li a {
     font-size: 1rem;
     font-family: Montserrat !important;
     text-transform: uppercase;
+}
+
+.list-item {
+    width: min-content;
+    white-space: nowrap;
+}
+
+.hamburger {
+    display: none;
 }
 
 /* ---------------------------------------- Main Image */
@@ -148,7 +151,6 @@ p {
 body {
     font-family: Montserrat;
 }
-
 
 /* ----------------------------------------Footer */
 
@@ -220,11 +222,11 @@ ul {
 
 /*--------------------------------------------Colors*/
 
-.site {
-    background-color: #006666;
+hr {
+    background-color: #013636;
 }
 
-.header-logo {
+.site {
     background-color: #006666;
 }
 
@@ -272,27 +274,45 @@ footer {
 
 /*--------------------------------------------Media Queries*/
 
-/* Large */
-@media screen and (min-width: 1100px) {
-    ul {
-    flex-flow: row wrap;
-    /* This aligns items to the end line on main-axis */
-    justify-content: flex-end;
-  }
-}
-  
-/* Medium screens */
-@media screen and (min-width: 800px) {
-    ul  {
-      /* When on medium sized screens, we center it by evenly distributing empty space around items */
-      justify-content: space-around;
+@media screen and (max-width: 800px) {
+
+    .hamburger {
+      display: block;
     }
-  }
-  
-  /* Small screens */
-@media screen and (min-width: 500px) {
-    ul {
-      /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
+
+    .mini-logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mobile-header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-header a {
+        display: flex
+        align-self: ;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #menu {
+        grid-auto-flow: row;
+        list-style-type: none;
+        row-gap: 40px;
+        column-gap: 0;
+        justify-items: center;
+        display: none;
+    }
+}
+
+------------ below means nav links always shown for screens 801px and above
+/*@media screen and (min-width: 801px) {
+    .menu {
+      display: block !important;
     }
   }
