@@ -6,24 +6,31 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Black Rose Tattoo Studio</title>
     <script src="https://kit.fontawesome.com/7df6ac9ad6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="site">
     <header id="header" class="flex-container">                       
-        <nav class="nav">
-                <a href="index.html" target="_top"><img src="assets/images/brt-mini-logo.png" id="mini-logo" class="mini-logo" alt="go to top of home page"></a>
-                <div id="hamburger-menu">
-                    <button class="hamburger-button"><i class="fa-solid fa-bars"></i></button>
-                </div>
+        <nav class="nav navbar navbar-light navbar-nav fixed-top navbar-expand-lg">
+            <a href="index.html" class="navbar-brand" target="_top" ><img src="assets/images/brt-mini-logo.png" id="mini-logo" class="mini-logo" alt="go to top of home page"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" aria-pressed="true">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link hvr-bob">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hvr-bob">Meet the artists</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hvr-bob">FAQs</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hvr-bob">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hvr-bob">Book In</a></li>
+                </ul>
             </div>
-            <ul id="menu">
-                <li class="list-item"><a href="index.html" class="active hvr-bob">Home</a></li>
-                <li class="list-item"><a href="#" class="hvr-bob">Meet the artists</a></li>
-                <li class="list-item"><a href="#" class="hvr-bob">FAQs</a></li>
-                <li class="list-item"><a href="#" class="hvr-bob">Contact Us</a></li>
-                <li class="list-item"><a href="#" class="hvr-bob">Book In</a></li>
-            </ul>
         </nav>
     </header>
     <div class="header-logo" id="main-logo">
@@ -34,7 +41,7 @@
                 <div class="studio-image">
                     <div class="image-overlay">
                         <div class="booking-button">
-                            <button><a href="#">BOOK IN</a></button>
+                            <button class="booking-button"><a href="#">BOOK IN</a></button>
                         <div class="studio-info">
                             <h3>Black Rose Tattoo is a fully licensed, professional tattoo studio located in the centre of Barnstaple, North Devon, established in 2017.</h3>
                             <br>
@@ -53,13 +60,11 @@
             <div class="opening-times">
                 <i class="fa-solid fa-calendar-days"></i>
                 <h6>Opening Times:</h6>
-                <br>
                 <p>Monday : 10am - 5pm<br>Tuesday : 10am - 5pm<br>Wednesday : 10am - 5pm<br>Thursday : 10am - 5pm<br>Friday : 10am - 6pm<br>Saturday : 10am - 7pm<br>Sunday : Closed</p>
             </div>
             <div class="contact-details">
                 <i class="fa-solid fa-house-chimney home-icon"></i>
                 <h6>Studio Contact Details:</h6>
-                <br>
                 <p>Black Rose Tattoo<br>1A Boutport Street<br>Barnstaple<br>Devon<br>EX311RH<br><i class="fa-solid fa-envelope"></i> blackrosebarnstaple@gmail.com</p>
             </div>
             <div class="stefania-logo">
@@ -76,11 +81,9 @@
             </div>
         </div>
     </footer>
-    <script>
-    document.querySelector('.hamburger-button').addEventListener('click', function() {
-    document.querySelector('#menu').style.display = 
-    (document.querySelector('#menu').style.display == 'none') ? 'block' : 'none';
-    });
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

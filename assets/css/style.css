@@ -40,10 +40,16 @@ hr {
 
 /*-----------------------------------------Nav */
 
-.mini-logo {
+.navbar-toggler {
+    margin-top: 1.5rem;
+    background-color: #006666;
     padding: 1rem;
-    height: 8em;
-    width: 8em;
+}
+
+.mini-logo {
+    height: 5em;
+    width: 5em;
+    padding: 1rem;
 }
 
 nav {
@@ -53,13 +59,11 @@ nav {
 }
 
 #menu a:hover{
-    display: none;
     border-bottom: 1.5px solid white;
     padding-bottom: 1rem;
 }
 
 .active {
-    display: none;
     border-bottom: 1.5px solid white;
     padding-bottom: 1rem;
 }
@@ -75,31 +79,14 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.hamburger-button {
-    background-color: rgba(102, 178, 178, 0.5);
-    color: white;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 8px;   
- }
-
- #hamburger-menu {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    margin-left: 4rem;
- }
-
- .list-item {
+.list-item {
     display: flex;
     justify-content: center;
  }
 
  #menu {
     display: none;
-    /*background-color: rgba(102, 178, 178, 0.5)*/
+
  }
 
  #menu a {
@@ -109,20 +96,12 @@ nav ul li a {
     text-decoration: none;
  }
 
- #menu a:hover {
-    background-color: rgba(0, 76, 76, 0.75);
- }
-
-/*.menu-toggle {
-    display: flex;
-    flex-direction: column;
-}
 
 /* ---------------------------------------- Main Image */
 
 .studio-image {
     background: url('../images/studio-front-desk.png') no-repeat center;
-    min-height: 100%;
+    min-height: 80%;
     width: 100%;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -132,6 +111,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .booking-button {
@@ -140,7 +120,7 @@ nav ul li a {
     position: relative;
 }
 
-button {
+.booking-button {
     font-family: 'Pirata One';
     font-size: 2rem;
     border-radius: 8px;
@@ -184,7 +164,7 @@ body {
 /* ----------------------------------------Footer */
 
 .home-icon {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 div.footer.flex-container {
@@ -312,17 +292,12 @@ footer {
 
 /*------- For Medium sized Mobile screens */
 @media screen and (min-width: 375px) and (max-width: 424px) {
-    #hamburger-menu {
-        margin-left: 8rem;
-    }
+    
 }
 
 /*------- For Large sized Mobile screens */
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
-    #hamburger-menu {
-        margin-left: 11rem;
-    }
 
     .opening-times {
         display: flex;
@@ -335,33 +310,19 @@ footer {
     .fa-calendar-days {
         padding: 0.5rem;
     }
+
+    h6 {
+        font-size: 0.5rem;
+    }
 }
 
 /*------- For Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    #hamburger-menu .hamburger-button {
-        display: none;
-        margin: 1rem;
-    }
 
     #menu {
         display: flex;
         align-items: flex-end;
         list-style-type: none;
-    }
-
-    #menu a:hover{
-        border-bottom: 1.5px solid white;
-        padding-bottom: 1rem;
-    }
-        
-    .active {
-        border-bottom: 1.5px solid white;
-        padding-bottom: 1rem;
-    }
-
-    .fa-calendar-days {
-        padding: 0.5rem;
     }
 
     .opening-times {
@@ -370,7 +331,7 @@ footer {
         justify-content: flex-end;
     }
 
-    .opening-times h6 {
+    h6 {
         font-size: 1rem;
     }
     
@@ -385,10 +346,6 @@ footer {
 
     .contact-details {
         justify-content: flex-end;
-    }
-
-    .contact-details h6 {
-        font-size: 1rem;
     }
     
     .contact-details p {
