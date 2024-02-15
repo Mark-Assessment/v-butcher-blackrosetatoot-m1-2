@@ -18,16 +18,18 @@
 
 /*--------------------------------------------Heading*/
 
+/*---------------------Header class not in use but kept whilst sorting menu
 .header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
 #text-logo {
    display: flex;
    width: 100%;
+   padding-top: 9rem;
    padding-bottom: 1rem;
    justify-content: space-around;
 }
@@ -35,16 +37,10 @@
 hr {
     height: 2px;
     width: 50%;
-    margin: auto;    
+    margin: auto;
 }
 
 /*-----------------------------------------Nav */
-
-.navbar-toggler {
-    margin-top: 1.5rem;
-    background-color: #006666;
-    padding: 1rem;
-}
 
 .mini-logo {
     height: 5em;
@@ -52,24 +48,19 @@ hr {
     padding: 1rem;
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    height: 8rem;
+.navbar-toggler {
+    background-color: #006666;
+    padding: 1rem;
 }
 
-#menu a:hover{
+/*#menu a:hover{
     border-bottom: 1.5px solid white;
     padding-bottom: 1rem;
-}
+}*/
 
 .active {
     border-bottom: 1.5px solid white;
-    padding-bottom: 1rem;
-}
-
-#menu {
-    display: none;
+    width: 10%;
 }
 
 nav ul li a {
@@ -79,29 +70,11 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.list-item {
-    display: flex;
-    justify-content: center;
- }
-
- #menu {
-    display: none;
-
- }
-
- #menu a {
-    display: flex;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
- }
-
-
 /* ---------------------------------------- Main Image */
 
 .studio-image {
     background: url('../images/studio-front-desk.png') no-repeat center;
-    min-height: 80%;
+    min-height: 100%;
     width: 100%;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -111,18 +84,14 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
 }
 
 .booking-button {
     text-align: center;
     top: 80%;
     position: relative;
-}
-
-.booking-button {
     font-family: 'Pirata One';
-    font-size: 2rem;
+    font-size: 3rem;
     border-radius: 8px;
     border: 2px #66b2b2;
     padding: 1rem; 
@@ -139,26 +108,26 @@ button a {
     padding: 1rem;
     margin-top: 10rem;
     margin-bottom: 5rem;
+    font-family: Montserrat;
 }
 
-h3 {
+.studio-info h3 {
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
 }
 
 .studio-text {
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
 /* ----------------------------------------Body */
 
 .main-content {
-    margin: 1rem;
-}
-
-body {
-    font-family: Montserrat;
+    margin-top: 1rem;
+    /*min-height: 50%;*/
 }
 
 /* ----------------------------------------Footer */
@@ -238,12 +207,21 @@ p {
 
 /*--------------------------------------------Colors*/
 
-hr {
+.site {
+    background-color: #006666;
+    color: white;
+}
+
+.mini-logo {
     background-color: #013636;
 }
 
-.site {
-    background-color: #006666;
+nav {
+    background-color: #013636;
+}
+
+hr {
+    background-color: #013636;
 }
 
 button {
@@ -260,22 +238,6 @@ button a {
     background-color: rgba(0, 128, 128, 0.85);
 }
 
-body {
-    color: white;
-}
-
-.mini-logo {
-    background-color: #013636;
-}
-
-nav ul li a {
-    color: white;
-}
-
-nav {
-    background-color: #013636;
-}
-
 footer {
     background-color: #013636;
 }
@@ -290,11 +252,6 @@ footer {
 
 /*--------------------------------------------Media Queries*/
 
-/*------- For Medium sized Mobile screens */
-@media screen and (min-width: 375px) and (max-width: 424px) {
-    
-}
-
 /*------- For Large sized Mobile screens */
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
@@ -308,7 +265,11 @@ footer {
     }
 
     .fa-calendar-days {
-        padding: 0.5rem;
+        padding: 0.75rem 0;
+    }
+
+    .home-icon {
+        padding: 0.75rem;
     }
 
     h6 {
@@ -318,11 +279,9 @@ footer {
 
 /*------- For Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    #menu {
-        display: flex;
-        align-items: flex-end;
-        list-style-type: none;
+    
+    .studio-info {
+        width: 30rem;
     }
 
     .opening-times {
@@ -331,21 +290,20 @@ footer {
         justify-content: flex-end;
     }
 
-    h6 {
-        font-size: 1rem;
+    .opening-times h6 {
+        font-size: 0.8rem;
     }
     
     .opening-times p {
         font-size: 0.7rem;
     }
 
-    .stefania-logo {
-        display: flex;
-        padding-top: 1rem;
-    }
-
     .contact-details {
         justify-content: flex-end;
+    }
+
+    .contact-details h6 {
+        font-size: 0.8rem;
     }
     
     .contact-details p {
@@ -354,11 +312,147 @@ footer {
     }
 
     .fa-calendar-days {
-        padding-top: 1.5rem;
+        padding: 1rem;
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .home-icon {
+        font-size: 1.4rem;
+        padding: 0.75rem;
+        text-align: justify;
+    }
+
+    .stefania-logo {
+        display: flex;
+        padding-top: 2rem;
+    }
+}
+
+/*------- For Laptop screens */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .navbar {
+        align-items: flex-end;
+    }
+
+    /*div .navbarTogglerDemo02 {
+        display: flex;
+        justify-content: space-around;
+    }*/
+
+    .studio-info {
+        width: 40rem;
+    }
+
+    .opening-times {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .opening-times h6 {
+        font-size: 0.8rem;
+    }
+    
+    .opening-times p {
+        font-size: 0.7rem;
+    }
+
+    .contact-details {
+        justify-content: flex-end;
+    }
+
+    .contact-details h6 {
+        font-size: 0.8rem;
+    }
+    
+    .contact-details p {
+        font-size: 0.7rem;
+        padding-top: 1rem;
+    }
+
+    .fa-calendar-days {
+        padding: 1rem;
         font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .home-icon {
+        font-size: 1.4rem;
+        padding: 0.75rem;
+    }
+
+    .stefania-logo {
+        display: flex;
+        padding-top: 2rem;
+    }
+}
+
+/*------- For Large Laptop screens */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+    .navbar {
+        align-items: flex-end;
+    }
+
+    .studio-info {
+        width: 60rem;
+    }
+
+    .booking-button {
+        font-size: 5rem;
+        padding: 2rem; 
+    }
+
+    .studio-info h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    
+    .studio-text {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .opening-times {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fa-calendar-days {
+        padding: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .opening-times h6 {
+        font-size: 1rem;
+    }
+    
+    .opening-times p {
+        font-size: 1rem;
+    }
+
+    .contact-details {
+        justify-content: flex-end;
+    }
+
+    .home-icon {
+        font-size: 1.4rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact-details h6 {
+        font-size: 1rem;
+    }
+    
+    .contact-details p {
+        font-size: 1rem;
+
+    }
+
+    .stefania-logo {
+        display: flex;
+        padding-top: 2rem;
     }
 }
