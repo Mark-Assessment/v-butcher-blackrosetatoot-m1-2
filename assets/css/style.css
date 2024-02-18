@@ -184,6 +184,58 @@ button a {
     align-items: center;
 }
 
+/* ----------------------------------------Faq's Page */
+
+.question-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.collapsible {
+    background-color: #004c4c;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    width: 80%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 0.7rem;
+    font-family: Montserrat;
+    border-radius: 8px;
+  }
+
+.collapsible:hover {
+    background-color: #66b2b2
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #006666;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.answer {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 /* ----------------------------------------Footer */
 
 .home-icon {
@@ -512,6 +564,15 @@ footer {
         font-size: 1rem;
         font-weight: 600;
     }
+
+    /*-- FAQs Page --*/
+    .question {
+        font-size: 1.5rem;
+    }
+
+    .answer {
+        font-size: 1rem;
+    }
 }
 
 /*------- For Large Laptop screens */
@@ -635,10 +696,20 @@ footer {
         font-size: 1rem;
         font-weight: 600;
     }
+
+    /*-- FAQs Page --*/
+    .question {
+        font-size: 1.7rem;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+    }
 }
 
 /*------- For Desktop screens */
 @media screen and (min-width: 1920px) {
+
     /*-- Header & Footer --*/
     .navbar {
         align-items: flex-end;
@@ -759,5 +830,14 @@ footer {
 
     .heart-divider {
         font-size: 2rem;
+    }
+
+    /*-- FAQs Page --*/
+    .question {
+        font-size: 2.5rem;
+    }
+
+    .answer {
+        font-size: 1.9rem;
     }
 }
