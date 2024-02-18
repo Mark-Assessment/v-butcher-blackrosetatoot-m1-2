@@ -143,6 +143,11 @@ button a {
     margin-bottom: 2rem;
 }
 
+.page-divider {
+    margin: 4rem;
+    width: 90%;
+}
+
 .artist-name {
     font-family: 'Pirata One';
     font-size: 3rem;
@@ -234,6 +239,25 @@ button a {
 .answer {
     font-size: 0.8rem;
     text-align: center;
+}
+
+/* ----------------------------------------Contact Us Page */
+
+.contact-info {
+    text-align: center;
+}
+
+.location-info {
+    font-size: 1rem;
+}
+
+.contact-icon {
+    font-size: 2rem;
+}
+
+.email-link {
+    color: #012c2c;
+    border-bottom: 2px solid #012c2c;
 }
 
 /* ----------------------------------------Footer */
@@ -335,7 +359,7 @@ hr {
     box-shadow: none !important;
  }
 
- .btn-primary:focus {
+.btn-primary:focus {
     background-color: #008080 !important;
     border: 0 !important;
     box-shadow: none !important;
@@ -711,6 +735,10 @@ footer {
 @media screen and (min-width: 1920px) {
 
     /*-- Header & Footer --*/
+    .header-logo {
+        margin: 2rem;
+    }
+
     .navbar {
         align-items: flex-end;
     }
@@ -723,25 +751,6 @@ footer {
     .navbar-nav li {
         margin-left: 4.5rem;
         padding-right: 9.5rem;
-    }
-
-    .studio-info {
-        width: 60rem;
-    }
-
-    .btn {
-        font-size: 6rem;
-        padding: 2rem; 
-    }
-
-    .studio-info h3 {
-        font-size: 1.5rem;
-        font-weight: 800;
-    }
-    
-    .studio-text {
-        font-size: 1.5rem;
-        font-weight: 500;
     }
 
     .opening-times {
@@ -802,6 +811,26 @@ footer {
     .map {
         display: flex;
         justify-content: center;
+    }
+
+    /*-- Home Page --*/
+    .studio-info {
+        width: 60rem;
+    }
+
+    .btn {
+        font-size: 6rem;
+        padding: 2rem; 
+    }
+
+    .studio-info h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    
+    .studio-text {
+        font-size: 1.5rem;
+        font-weight: 500;
     }
 
     /*-- Meet the Artists Page --*/
