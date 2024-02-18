@@ -136,6 +136,7 @@ button a {
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
+    padding: 1rem;
 }
 
 .title-divider {
@@ -174,7 +175,7 @@ button a {
 .contact-links {
     font-size: 0.7rem;
     border-bottom: 1px solid white;
-    margin: 1rem;
+    margin: 0.5rem;
     text-transform: uppercase;
 }
 
@@ -313,12 +314,17 @@ footer {
     color: white;
 }
 
+.heart-divider {
+    color: #66b2b2;
+}
+
 /*--------------------------------------------Media Queries*/
 
 /*------- For Large sized Mobile screens */
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
 
+    /*--- Footer --*/
     .opening-times {
         display: flex;
         flex-direction: column;
@@ -343,10 +349,12 @@ footer {
 /*------- For Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
+    /*-- Home Page --*/
     .studio-info {
         width: 30rem;
     }
 
+    /*-- Header & Footer --*/
     #mini-logo-footer {
         height: 6rem;
         width: 6rem;
@@ -401,25 +409,22 @@ footer {
         font-size: 4rem;
     }
 
+    /*-- Meet the Artists Page --*/
     .page-title {
         padding: 2rem;
+    }
+
+    .artist-main {
+        height: 9rem;
+        width: 9rem;
     }
 }
 
 /*------- For Laptop screens */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-
+    /*-- Header & Footer --*/
     .navbar {
         align-items: flex-end;
-    }
-
-    .btn {
-        font-size: 5rem;
-        padding: 2rem; 
-    }
-
-    .studio-info {
-        width: 40rem;
     }
 
     #mini-logo-footer {
@@ -474,13 +479,28 @@ footer {
         font-size: 4rem;
     }
 
+     /*-- Home Page --*/
+     .btn {
+        font-size: 5rem;
+        padding: 2rem; 
+    }
+
+    .studio-info {
+        width: 40rem;
+    }
+
+    /*-- Meet the Artists Page --*/
+    .page-title {
+        padding: 2rem;
+    }
+
     .artist-name {
         font-size: 4rem;
     }
 
     .artist-main {
-        height: 10rem;
-        width: 10rem;
+        height: 11rem;
+        width: 11rem;
     }
 
     .artist-intro {
@@ -497,6 +517,7 @@ footer {
 /*------- For Large Laptop screens */
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
 
+    /*-- Header & Footer --*/
     .navbar {
         align-items: flex-end;
     }
@@ -511,28 +532,9 @@ footer {
         padding-right: 4rem;
     }
 
-    .studio-info {
-        width: 60rem;
-    }
-
-    .btn {
-        font-size: 6rem;
-        padding: 2rem; 
-    }
-
     #mini-logo-footer {
         height: 7rem;
         width: 7rem;
-    }
-
-    .studio-info h3 {
-        font-size: 1.5rem;
-        font-weight: 800;
-    }
-    
-    .studio-text {
-        font-size: 1.5rem;
-        font-weight: 500;
     }
 
     .fa-calendar-days {
@@ -589,11 +591,55 @@ footer {
         font-size: 5rem;
         padding: 2rem;
     }
+
+    /*-- Home Page --*/
+    .studio-info {
+        width: 60rem;
+    }
+
+    .btn {
+        font-size: 6rem;
+        padding: 2rem; 
+    }
+
+    .studio-info h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    
+    .studio-text {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    /*-- Meet the Artists Page --*/
+    .page-title {
+        padding: 2rem;
+    }
+
+    .artist-name {
+        font-size: 4rem;
+    }
+
+    .artist-main {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .artist-intro {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contact-links {
+        font-size: 1rem;
+        font-weight: 600;
+    }
 }
 
 /*------- For Desktop screens */
 @media screen and (min-width: 1920px) {
-
+    /*-- Header & Footer --*/
     .navbar {
         align-items: flex-end;
     }
@@ -685,5 +731,33 @@ footer {
     .map {
         display: flex;
         justify-content: center;
+    }
+
+    /*-- Meet the Artists Page --*/
+    .page-title {
+        padding: 2rem;
+    }
+
+    .artist-name {
+        font-size: 8rem;
+    }
+
+    .artist-main {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .artist-intro {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contact-links {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .heart-divider {
+        font-size: 2rem;
     }
 }
