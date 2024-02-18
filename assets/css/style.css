@@ -260,6 +260,73 @@ button a {
     border-bottom: 2px solid #012c2c;
 }
 
+/* ----------------------------------------Booking In Page */
+
+.booking-reqs {
+    font-size: 0.7rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.mini-hr {
+    width: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-logos p {
+    font-size: 0.8rem;
+}
+
+.shop-email-logo {
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid #004c4c;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.booking-in-form {
+    width: 98%;
+    padding: 2rem;
+
+    display: grid;
+    justify-items: stretch;
+}
+
+.booking-in-form h4, .consent {
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.consent-text, .disclaimer {
+    font-size: 0.6rem;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}
+
+.submit-button, .reset-button {
+    border: 2px solid #b2d8d8;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
 /* ----------------------------------------Footer */
 
 .home-icon {
@@ -344,7 +411,7 @@ nav {
     background-color: #013636;
 }
 
-hr {
+hr, .mini-hr {
     background-color: #013636;
 }
 
@@ -392,6 +459,15 @@ footer {
 
 .heart-divider {
     color: #66b2b2;
+}
+
+.submit-button, .reset-button {
+    background-color: #004c4c;
+    color: white;
+}
+
+.submit-button:hover, .reset-button:hover {
+    background-color: #008080;
 }
 
 /*--------------------------------------------Media Queries*/
