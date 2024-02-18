@@ -16,6 +16,12 @@
     display: flex;
   }
 
+/* ----------------------------------------Body */
+
+.main-content {
+    margin-top: 1rem;
+}
+
 /*--------------------------------------------Heading*/
 
 #text-logo {
@@ -62,7 +68,7 @@ nav ul li a {
     padding-bottom: 1rem;
 }
 
-/* ---------------------------------------- Main Image */
+/* ---------------------------------------- Home Page */
 
 .studio-image {
     background: url('../images/studio-front-desk.png') no-repeat center;
@@ -117,11 +123,64 @@ button a {
     font-weight: 600;
 }
 
-/* ----------------------------------------Body */
+/* ---------------------------------------- Meet The Artists Page */
 
-.main-content {
-    margin-top: 1rem;
-    /*min-height: 50%;*/
+.artist-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-divider {
+    margin-bottom: 2rem;
+}
+
+.artist-name {
+    font-family: 'Pirata One';
+    font-size: 3rem;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.artist-main {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.artist-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+}
+
+.artist-intro {
+    font-size: 0.7rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.contact-links {
+    font-size: 0.7rem;
+    border-bottom: 1px solid white;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.heart-divider {
+    display: flex;
+    align-items: center;
 }
 
 /* ----------------------------------------Footer */
@@ -164,7 +223,7 @@ ul {
 
 .stefania-logo {
     display: none;
-}
+} 
 
 .laser-logo {
     display: flex;
@@ -243,6 +302,14 @@ footer {
 }
 
 .social-networks i {
+    color: white;
+}
+
+.page-title {
+    color: #011d1d;
+}
+
+.contact-links {
     color: white;
 }
 
@@ -333,10 +400,15 @@ footer {
     .social-networks i {
         font-size: 4rem;
     }
+
+    .page-title {
+        padding: 2rem;
+    }
 }
 
 /*------- For Laptop screens */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+
     .navbar {
         align-items: flex-end;
     }
@@ -400,6 +472,25 @@ footer {
 
     .social-networks i {
         font-size: 4rem;
+    }
+
+    .artist-name {
+        font-size: 4rem;
+    }
+
+    .artist-main {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .artist-intro {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contact-links {
+        font-size: 1rem;
+        font-weight: 600;
     }
 }
 
