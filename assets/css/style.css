@@ -68,6 +68,20 @@ nav ul li a {
     padding-bottom: 1rem;
 }
 
+/*-----------------------------------------Page Title */
+
+.page-title {
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+
 /* ---------------------------------------- Home Page */
 
 .studio-image {
@@ -130,22 +144,8 @@ button a {
     flex-direction: column;
 }
 
-.page-title {
-    font-family: Montserrat;
-    font-size: 4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem;
-}
-
 .title-divider {
     margin-bottom: 2rem;
-}
-
-.page-divider {
-    margin: 4rem;
-    width: 90%;
 }
 
 .artist-name {
@@ -243,8 +243,17 @@ button a {
 
 /* ----------------------------------------Contact Us Page */
 
+.contact-us-title {
+    font-size: 3.5rem;
+    justify-content: flex-start
+}
+
 .contact-info {
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .location-info {
@@ -253,11 +262,25 @@ button a {
 
 .contact-icon {
     font-size: 2rem;
+    padding: 1rem;
 }
 
 .email-link {
-    color: #012c2c;
     border-bottom: 2px solid #012c2c;
+}
+
+.map-contact {
+    overflow: hidden;
+    width: 100%;
+}
+
+.responsive-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%
 }
 
 /* ----------------------------------------Booking In Page */
@@ -325,6 +348,26 @@ label {
 
 .form-buttons {
     text-align: center;
+}
+
+/* ----------------------------------------Thank You Page */
+
+.thankyou-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 55vh;
+    padding: 1rem;
+}
+
+.thankyou-content h1 {
+    text-align: center;
+}
+
+.thankyou-content p {
+    text-align: center;
+    font-size: 1rem;
 }
 
 /* ----------------------------------------Footer */
@@ -461,6 +504,10 @@ footer {
     color: #66b2b2;
 }
 
+.email-link {
+    color: #012c2c;
+}
+
 .submit-button, .reset-button {
     background-color: #004c4c;
     color: white;
@@ -561,14 +608,20 @@ footer {
         font-size: 4rem;
     }
 
-    /*-- Meet the Artists Page --*/
+    /*-- Page Title --*/
     .page-title {
         padding: 2rem;
     }
 
+    /*-- Meet the Artists Page --*/
     .artist-main {
         height: 9rem;
         width: 9rem;
+    }
+
+    /*-- Contact Us Page --*/
+    .contact-us-title {
+        flex-direction: column;
     }
 }
 
@@ -641,11 +694,12 @@ footer {
         width: 40rem;
     }
 
-    /*-- Meet the Artists Page --*/
+    /*-- Page Title --*/
     .page-title {
         padding: 2rem;
     }
 
+    /*-- Meet the Artists Page --*/
     .artist-name {
         font-size: 4rem;
     }
@@ -672,6 +726,33 @@ footer {
 
     .answer {
         font-size: 1rem;
+    }
+
+    /*-- Contact Us Page --*/
+    .contact-info h3 {
+        font-size: 2rem;
+    }
+
+    .contact-info p {
+        font-size: 1.3rem;
+    }
+
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+
+    /*-- Booking In Page --*/
+    .booking-reqs, .contact-logos p, label, .disclaimer, .consent-text {
+        font-size: 1rem;
+    }
+    
+    .shop-email-logo {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .submit-button, .reset-button {
+        font-size: 1.5rem;
     }
 }
 
@@ -773,11 +854,12 @@ footer {
         font-weight: 500;
     }
     
-    /*-- Meet the Artists Page --*/
+    /*-- Page Title --*/
     .page-title {
         padding: 2rem;
     }
 
+    /*-- Meet the Artists Page --*/
     .artist-name {
         font-size: 4rem;
     }
@@ -804,6 +886,33 @@ footer {
 
     .answer {
         font-size: 1.3rem;
+    }
+
+    /*-- Contact Us Page --*/
+    .contact-info h3 {
+        font-size: 2.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1.7rem;
+    }
+
+    .contact-icon {
+        font-size: 3rem;
+    }
+
+    /*-- Booking In Page --*/
+    .booking-reqs, .contact-logos p, label, .disclaimer, .consent-text {
+        font-size: 1.5rem;
+    }
+
+    .shop-email-logo {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .submit-button, .reset-button {
+        font-size: 1.8rem;
     }
 }
 
@@ -909,11 +1018,12 @@ footer {
         font-weight: 500;
     }
 
-    /*-- Meet the Artists Page --*/
+    /*-- Page Title --*/
     .page-title {
         padding: 2rem;
     }
 
+    /*-- Meet the Artists Page --*/
     .artist-name {
         font-size: 8rem;
     }
@@ -944,5 +1054,32 @@ footer {
 
     .answer {
         font-size: 1.9rem;
+    }
+
+    /*-- Contact Us Page --*/
+    .contact-info h3 {
+        font-size: 3rem;
+    }
+
+    .contact-info p {
+        font-size: 2rem;
+    }
+
+    .contact-icon {
+        font-size: 3rem;
+    }
+
+    /*-- Booking In Page --*/
+    .booking-reqs, .contact-logos p, label, .disclaimer, .consent-text {
+        font-size: 2rem;
+    }
+
+    .shop-email-logo {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .submit-button, .reset-button {
+        font-size: 2rem;
     }
 }
