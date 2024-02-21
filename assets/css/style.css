@@ -56,6 +56,10 @@ hr {
     padding: 1rem;
 }
 
+.nav-link {
+    font-weight: 600;
+}
+
 nav ul li a {
     text-decoration: none;
     font-size: 1rem;
@@ -63,9 +67,8 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.navbar a:hover{
+.navbar .nav-link:hover{
     border-bottom: 1.5px solid white;
-    padding-bottom: 1rem;
 }
 
 /*-----------------------------------------Page Title */
@@ -452,6 +455,10 @@ p {
 
 nav {
     background-color: #013636;
+}
+
+.nav-link{
+    color: white !important;
 }
 
 hr, .mini-hr {
