@@ -913,6 +913,10 @@ footer {
         font-size: 1.5rem;
     }
 
+    form h4 {
+        margin-left: 2rem;
+    }
+
     .shop-email-logo {
         height: 8rem;
         width: 8rem;
@@ -1088,5 +1092,9 @@ footer {
 
     .submit-button, .reset-button {
         font-size: 2rem;
+    }
+
+    form h4 {
+        margin-left: 2rem;
     }
 }
