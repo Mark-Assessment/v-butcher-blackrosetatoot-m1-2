@@ -1,6 +1,8 @@
 # **Black Rose Tattoo**
 
-Visit the deployed website: [Black Rose Tattoo]()
+![Black Rose Tattoo shown on a variety of screen sizes](assets/images/black-rose-tattoo.png)
+
+Visit the deployed website: [Black Rose Tattoo](https://veebee4.github.io/blackrosetattoo/)
 
 ## **Project Description**
 
@@ -45,6 +47,9 @@ I wanted to create this website to improve on the aesthetics and accessibility f
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
+--- 
+![Black Rose Tattoo Banner](assets/images/brt-logo.png)
+
 ## User Experience UX
 
 - ### User Stories
@@ -71,36 +76,49 @@ I wanted to create this website to improve on the aesthetics and accessibility f
 
 - #### Colour Scheme
 
-  The main colours used will be grey and pink, this follows the company's aesthetic and branding of being female owned and has been used on the previous site, providing some familiarity to anyone who uses the website already.
+  I initially chose a colour scheme of grey and pink but once I had applied the colours early on I decided that it did not work and did not provide the look I was going for. I then found a colour palette of shades of teal which I have used and also added to with selections of my own, complimented with gold accents, with black and white details to provide the necessary distinction between background and content.
+  All colours are displayed within a commented section of my css so that if you need to change anything, you can make the changes in this section and it will apply to the classes, some of which cover repeated elements throughout the website.
 
+  I have used #013636 for the background of the navigation and footer elements.
+  Using a slightly lighter teal, #006666, for the background of all pages to distinguish the difference between header, footer and main section of the webpage.
+  All text and icons are in white to ensure this is easily visible to the user.
+  I have used #011d1d for the page titles, I made this a little darker, again to really make the text distinguishable.
+
+![Black Rose Tattoo Colour Scheme](documentation/colour-palette.png)
 
 - #### Typography
   Google Fonts was used to import the chosen fonts for use on the site.
 
-  - For the Page Title I have used the google font Pirata One. Pirata One is font close to black lettering which is a calligraphy style commonly used by tattoo artists. 
+  - For the Page Title I have used the google font [Pirata One](https://fonts.google.com/specimen/Pirata+One?query=pirata+one) Pirata One is a font that is close to black lettering which is a calligraphy style commonly used by tattoo artists.
 
-  - I have chosen Pirata One, Oswald and Montserrat as my fonts, with a back up of sans-serif if those fonts do not work.
+  ![Pirata One Font Example](documentation/pirata-one-example.png)
+
+  - I have also chosen [Montserrat](documentation/montserrat-example.png) as my other font, which is clear and easily readable.
 
 - #### Imagery
 
-  - This is an important aspect of this website as tattoo's are a visual commodity, images will showcase the studios, artists work and also artists themselves.
+  - This is an important aspect of this website as tattoo's are a visual commodity, images will showcase the studio and also examples of the artists work. The main image on the home page gives the user a sneak peak at the tattoo studio before setting foot in the physical location.
 
 - #### Wireframes
 
-  - Home Page Wireframes [View]()
-  - FAQ Page Wireframe [View]()
-  - Contact Us Page Wireframe [View]()
-  - Booking In Page Wireframe [View]()
+  - Home Page Wireframes [Desktop](documentation/wireframes/home-wireframe.png) [Mobile](documentation/wireframes/home-mobile-wireframe.png)
+  - FAQ Page Wireframe [View](documentation/wireframes/faqs-wireframe.png)
+  - Contact Us Page Wireframe [View](documentation/wireframes/contact-us-wireframe.png)
+  - Booking In Page Wireframe [Desktop](documentation/wireframes/book-in-wireframe.png) [Mobile](documentation/wireframes/book-in-mobile-wireframe.png)
 
 ## Technology Used
 
-This project is written using HTML & CSS using the Cloud IDE and bootstrap templates, currently being hosted on GitHub.
+This project is written using HTML & CSS using the Cloud IDE. I have also used flex-box and bootstrap to make the site responsive, and it is currently being hosted on GitHub.
 
 ## Features
 
+The website comprises of a homepage, meet the artists page to introduce the artists working at the studio, an faq page, along with a contact and booking in page. The form on the booking in page re-directs to a thank you page once the form has been filled in and the submit button has been pressed.
+
 - Responsive on all devices, using a mobile first approach.
-- Interactive Menus and links
-- Street Map
+- Interactive Menus and links on all pages.
+- Street Map.
+- Small logo's on the header and footer that act as a link back to the home page.
+- Main logo that appears on every page.
 
 ### Languages Used
 
