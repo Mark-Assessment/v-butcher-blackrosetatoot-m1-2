@@ -36,6 +36,12 @@ I wanted to create this website to improve on the aesthetics and accessibility f
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  *
+  * [Full Testing](#full-testing)
+  * [First Time Visitor Testing](#first-time-visitor-testing)
+  * [Returning Visitor Testing](#returning-visitor-testing)
+  * [Frequent Visitor Testing](#frequent-visitor-testing)
+  * [Further Testing](#further-testing)
   * [Chrome DevTools Audit Report](#chrome-devtools-audit-report)
   * [Solved Bugs](#solved-bugs)
   * [Known Bugs](#known-bugs)
@@ -161,27 +167,27 @@ I have been trying to make the project and website as accessible as possible. I 
 
 ### Frameworks, Libraries & Programs Used
 
-   +[Bootstrap 4.3.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+   + [Bootstrap 4.3.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     ⋅⋅⋅Bootstrap was used to create a responsive navigation menu to allow for a hamburger menu once the screen size reduced from desktop/
-   +[Hover.css:](https://ianlunn.github.io/Hover/)
+   + [Hover.css:](https://ianlunn.github.io/Hover/)
     ⋅⋅⋅Hover.css was used on buttons and the faq questions to allow feedback for the user.
-   +[Google Fonts:](https://fonts.google.com/)
+   + [Google Fonts:](https://fonts.google.com/)
     ⋅⋅⋅Google fonts were used by importing the fonts Pirata One and Montserrat, into the style.css file which has been used on all pages within the project.
-   +[Font Awesome:](https://fontawesome.com/)
+   + [Font Awesome:](https://fontawesome.com/)
     ⋅⋅⋅Font Awesome was used to add icons for aesthetic purposes.
-   +[jQuery:](https://jquery.com/)
+   + [jQuery:](https://jquery.com/)
     ⋅⋅⋅jQuery comes with Bootstrap and makes the navbar responsive.
-   +[Git](https://git-scm.com/)
+   + [Git](https://git-scm.com/)
     ⋅⋅⋅The git command was used for version control via the terminal in Gitpod, to commit to Git and Push to GitHub.
-   +[GitHub:](https://github.com/)
+   + [GitHub:](https://github.com/)
     ⋅⋅⋅GitHub is used to save and store the files and projects code after being pushed from Git.
-   +[Balsamiq:](https://balsamiq.com/)
+   + [Balsamiq:](https://balsamiq.com/)
     ⋅⋅⋅Balsamiq was used to create wireframes.
-   +[Google Developer Tools](https://developers.google.com/web/tools) 
+   + [Google Developer Tools](https://developers.google.com/web/tools) 
     ⋅⋅⋅To troubleshoot and test features, solve issues with responsiveness and styling.
-   +[Am I Responsive?](http://ami.responsivedesign.is/)
+   + [Am I Responsive?](http://ami.responsivedesign.is/)
     ⋅⋅⋅To show the website home page image on a range of devices.
-   +[Procreate](https://procreate.com/)
+   + [Procreate](https://procreate.com/)
     ⋅⋅⋅Used to design the text logo and the mini logo for the header and footer.
 
 
@@ -224,7 +230,7 @@ To clone the repository:
 
 ## Testing
 
-- #### First Time Visitor Goals
+- #### First Time Visitor Testing
 
   1. As a first time visitor, I want to be able to navigate through the site and find the content I want without difficulty.
     1. Upon loading the home page, users are automatically presented with a simple, clean and easily readable navigation bar to go to the page of their choice, each navigation link states the page unambiguously and plainly, and displays a bottom border when the user hovers over it, providing feedback to the user that they are hovered over that page. Underneath there is a logo clearly displaying 'Black Rose Tattoo', so the user knows exactly where they are.
@@ -252,7 +258,7 @@ To clone the repository:
 
     ![User Story 4](documentation/testing/user-stories/user-story-4-screenshot.png)
 
-- #### Returning Visitor Goals
+- #### Returning Visitor Testing
 
   1. As a returning visitor, I want to be able to easily and quickly find to contact details again.
     1. The user can go straight to the contact page by going through the navigation link 'Contact Us' at the top of the page or they can obtain information straight away by going to the footer in place on every page, where it has become a standard practice to provide this information.
@@ -262,17 +268,10 @@ To clone the repository:
 
     ![Returning User Story](documentation/testing/user-stories/returning-user-story-screenshot.png)
 
-- #### Frequent Visitor Goals
+- #### Frequent Visitor Testing
 
   1. As a frequent visitor, I want to be able to see if any new artists have been added to the studio.
     1. Any new artists will be added to the list of artists on the 'Meet The Artists' page, which is self explanatory and would jump out at the user as being the first place to check.
-
-### Further Testing
-  All webpages have been validated against the W3 online validation sites which have come back with no errors or warnings, and I have checked compatibilities across various devices and a few different web browsers.
-
-  Testing was carried out throughout the building of the website. I used Chrome developer tools whilst building help troubleshoot any issues I came across.
-
-  I viewed each page of the website using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
 
   #### Full Testing
 
@@ -330,6 +329,12 @@ To clone the repository:
 | Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
 | Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
 
+### Further Testing
+  All webpages have been validated against the W3 online validation sites which have come back with no errors or warnings, and I have checked compatibilities across various devices and a few different web browsers.
+
+  Testing was carried out throughout the building of the website. I used Chrome developer tools whilst building help troubleshoot any issues I came across.
+
+  I viewed each page of the website using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
 
 - #### Chrome DevTools Audit Report
   The Google Page-speed Services were used to assess the accessibiity of the project to ensure the site met expected accessible standards on desktop and mobile. The performance on my website could be better and this could be improved upon on future releases - the project scored highly in all other areas.
@@ -354,7 +359,7 @@ To clone the repository:
 
 * When testing was carried out on an Iphone 12 mobile, the booking in form does not display correctly; the title is off center, the checkbox is left aligned for some reason and users have to scroll to the right slightly to view the end of the text box. This is all displayed correctly when viewing on a desktop and reducing the screen size either just through the browser or through devtools.
 
-  ![Form not displaying correctly](documentation/testing/mobile-form-screenshot.png =500x)
+  ![Form not displaying correctly](documentation/testing/mobile-form-screenshot.png)
 
 - - -
 
