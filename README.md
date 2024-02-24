@@ -113,8 +113,8 @@ I wanted to create this website to improve on the aesthetics and accessibility f
 
   - Home Page Wireframes [Desktop](documentation/wireframes/home-wireframe.png) [Mobile](documentation/wireframes/home-mobile-wireframe.png)
   - Meet The Artists Wireframe [Tablet](/documentation/wireframes/meet-the-artists-tablet-wireframe.png)
-  - FAQ Page Wireframe [View](documentation/wireframes/faqs-wireframe.png)
-  - Contact Us Page Wireframe [View](documentation/wireframes/contact-us-wireframe.png)
+  - FAQ Page Wireframe [Desktop](documentation/wireframes/faqs-wireframe.png)
+  - Contact Us Page Wireframe [Desktop](documentation/wireframes/contact-us-wireframe.png)
   - Booking In Page Wireframe [Desktop](documentation/wireframes/book-in-wireframe.png) [Mobile](documentation/wireframes/book-in-mobile-wireframe.png)
 
   My website design has been slightly changed and tweaked from the original design on the wireframes, this is purely down to aesthetics.
@@ -161,28 +161,28 @@ I have been trying to make the project and website as accessible as possible. I 
 
 ### Frameworks, Libraries & Programs Used
 
-   *[Bootstrap 4.3.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to create a responsive navigation menu to allow for a hamburger menu once the screen size reduced from desktop/
-   *[Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on buttons and the faq questions to allow feedback for the user.
-   *[Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used by importing the fonts Pirata One and Montserrat, into the style.css file which has been used on all pages within the project.
-   *[Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used to add icons for aesthetic purposes.
-   *[jQuery:](https://jquery.com/)
-    - jQuery comes with Bootstrap and makes the navbar responsive.
-   *[Git](https://git-scm.com/)
-    - The git command was used for version control via the terminal in Gitpod, to commit to Git and Push to GitHub.
-   *[GitHub:](https://github.com/)
-    - GitHub is used to save and store the files and projects code after being pushed from Git.
-   *[Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create wireframes.
-   *[Google Developer Tools](https://developers.google.com/web/tools) 
-   - To troubleshoot and test features, solve issues with responsiveness and styling.
-   *[Am I Responsive?](http://ami.responsivedesign.is/)
-   - To show the website home page image on a range of devices.
-   *[Procreate](https://procreate.com/)
-   - Used to design the text logo and the mini logo for the header and footer.
+   +[Bootstrap 4.3.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    ⋅⋅⋅Bootstrap was used to create a responsive navigation menu to allow for a hamburger menu once the screen size reduced from desktop/
+   +[Hover.css:](https://ianlunn.github.io/Hover/)
+    ⋅⋅⋅Hover.css was used on buttons and the faq questions to allow feedback for the user.
+   +[Google Fonts:](https://fonts.google.com/)
+    ⋅⋅⋅Google fonts were used by importing the fonts Pirata One and Montserrat, into the style.css file which has been used on all pages within the project.
+   +[Font Awesome:](https://fontawesome.com/)
+    ⋅⋅⋅Font Awesome was used to add icons for aesthetic purposes.
+   +[jQuery:](https://jquery.com/)
+    ⋅⋅⋅jQuery comes with Bootstrap and makes the navbar responsive.
+   +[Git](https://git-scm.com/)
+    ⋅⋅⋅The git command was used for version control via the terminal in Gitpod, to commit to Git and Push to GitHub.
+   +[GitHub:](https://github.com/)
+    ⋅⋅⋅GitHub is used to save and store the files and projects code after being pushed from Git.
+   +[Balsamiq:](https://balsamiq.com/)
+    ⋅⋅⋅Balsamiq was used to create wireframes.
+   +[Google Developer Tools](https://developers.google.com/web/tools) 
+    ⋅⋅⋅To troubleshoot and test features, solve issues with responsiveness and styling.
+   +[Am I Responsive?](http://ami.responsivedesign.is/)
+    ⋅⋅⋅To show the website home page image on a range of devices.
+   +[Procreate](https://procreate.com/)
+    ⋅⋅⋅Used to design the text logo and the mini logo for the header and footer.
 
 
 ## Deployment & Local Development
@@ -231,26 +231,26 @@ To clone the repository:
     2. The navigation bar sticks to the top of each page when the user scrolls further down the page, so all pages are easily accessible at any point during the users' visit.
     3. On the booking in page, there is a form to provide all information for the user to be able to book in effectively. On pressing submit, the user is redirected to a thank you page and the header and footer is accessible on this page so the user can take themselves back to any other page, if they wish.
 
-    [User Story 1](documentation/testing/user-stories/user-story-1-screenshot.png)
+    ![User Story 1](documentation/testing/user-stories/user-story-1-screenshot.png)
 
   2. As a first time visitor, I want to be able to book in easily.
     1. When the visitor loads the home page, within the nav bar at the top of the page there is a navigation link to the booking in page, or the user can scroll down to see an image of the studio that contains a centered booking in button, this means the user can access the booking in page from all pages, at any point within the page.
     2. The booking in form itself is easy to read and simple to use with each text area appropriately labelled, what it is for. The input areas and checkbox all have the required attribute (apart from the uploading of reference photos which is not required), so the user can also ensure they are booked in effectively as all information is required by the studio.
 
-    [User Story 2](documentation/testing/user-stories/user-story-2-screenshot.png)
+    ![User Story 2](documentation/testing/user-stories/user-story-2-screenshot.png)
 
   3. As a first time visitor, I want to have initial tattoo questions answered on a page so I don't have to contact anyone first.
     1. The user can easily navigate to the clearly marked FAQ page from any page on the website. They can then view the questions via a collapsable element meaning they can just view the questions they require answers for.
     2. Each question is a button which changes to a lighter colour to show feedback to the user as to which question they are currently hovering over. The user then needs to click on the question and the answer is expanded below.
 
-    [User Story 3 - Question Highlighted](documentation/testing/user-stories/user-story-3-screenshot.png)
-    [User Story 3 - Question Clicked](documentation/testing/user-stories/user-story-3-screenshot-2.png)
+    ![User Story 3 - Question Highlighted](documentation/testing/user-stories/user-story-3-screenshot.png)
+    ![User Story 3 - Question Clicked](documentation/testing/user-stories/user-story-3-screenshot-2.png)
 
   4. As a first time visitor, I would like to view current/existing work by the artist.
     1. The user can navigate to the 'Meet The Artists' page, whereby they will find links to the artists' social media and a sneak peak an example of each artists' work.
     2. The links to each artists Instagram are clearly marked underneath each artist picture and introduction. These links have been coded to open into a new tab so the user isn't taken away from the main website completely.
 
-    [User Story 4](documentation/testing/user-stories/user-story-4-screenshot.png)
+    ![User Story 4](documentation/testing/user-stories/user-story-4-screenshot.png)
 
 - #### Returning Visitor Goals
 
@@ -260,7 +260,7 @@ To clone the repository:
   2. As a returning visitor, I want to be able to gain quick access the artists' up-to-date work.
     1. The user can either visit the studios Instagram, which is represented by an icon on the footer of each page, or they can visit the 'Meet The Artists' page and go to the specific artists' instagram which is shown as a link under the artists' picture and introduction.
 
-    [Returning User Story](documentation/testing/user-stories/returning-user-story-screenshot.png)
+    ![Returning User Story](documentation/testing/user-stories/returning-user-story-screenshot.png)
 
 - #### Frequent Visitor Goals
 
@@ -274,7 +274,7 @@ To clone the repository:
 
   I viewed each page of the website using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
 
-  - #### Full Testing
+  #### Full Testing
 
   ##### Home Page
 
@@ -334,7 +334,7 @@ To clone the repository:
 - #### Chrome DevTools Audit Report
   The Google Page-speed Services were used to assess the accessibiity of the project to ensure the site met expected accessible standards on desktop and mobile. The performance on my website could be better and this could be improved upon on future releases - the project scored highly in all other areas.
 
-  [Lighthouse Result](documentation/testing/lighthouse-results.png)
+  ![Lighthouse Result](documentation/testing/lighthouse-results.png)
 
 - #### Browser Testing
   - The Website has been tested on Google Chrome, Safari, and Microsoft Edge.
@@ -354,7 +354,7 @@ To clone the repository:
 
 * When testing was carried out on an Iphone 12 mobile, the booking in form does not display correctly; the title is off center, the checkbox is left aligned for some reason and users have to scroll to the right slightly to view the end of the text box. This is all displayed correctly when viewing on a desktop and reducing the screen size either just through the browser or through devtools.
 
-  ![Form not displaying correctly](/documentation/testing/mobile-form-screenshot.png)
+  ![Form not displaying correctly](documentation/testing/mobile-form-screenshot.png =500x)
 
 - - -
 
