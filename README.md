@@ -22,12 +22,10 @@ I wanted to create this website to improve on the aesthetics and accessibility f
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
   * [Features](#features)
-    * [The Home Page](#the-home-page)
-    * [The Game Page](#the-game-page)
     * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
-* [Technologies Used](#technologies-used)
+* [Technology Used](#technology-used)
   * [Languages Used](#languages-used)
   * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
@@ -38,13 +36,13 @@ I wanted to create this website to improve on the aesthetics and accessibility f
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  * [Chrome DevTools Audit Report](#chrome-devtools-audit-report)
   * [Solved Bugs](#solved-bugs)
   * [Known Bugs](#known-bugs)
   
 * [Credits](#credits)
   * [Code Used](#code-used)
   * [Content](#content)
-  * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
 --- 
@@ -56,44 +54,55 @@ I wanted to create this website to improve on the aesthetics and accessibility f
 
 - #### First Time Visitor Goals
 
-        1. As a first time visitor, I want to be able to navigate through the site and find the content I want without difficulty.
-        2. As a first time visitor, I want to be able to book in easily.
-        3. As a first time visitor, I want to have initial tattoo questions answered on a page so I don't have to contact anyone first.
-        4. As a first time visitor, I would like to view current/existing work by the artist.
+  1. As a first time visitor, I want to be able to navigate through the site and find the content I want without difficulty.
+  2. As a first time visitor, I want to be able to book in easily.
+  3. As a first time visitor, I want to have initial tattoo questions answered on a page so I don't have to contact anyone first.
+  4. As a first time visitor, I would like to view current/existing work by the artist.
 
 - #### Returning Visitor Goals
 
-        1. As a returning visitor, I want to be able to easily and quickly find to contact details again.
-        2. As a returning visitor, I want to be able to gain quick access the artists' up-to-date work.
+  1. As a returning visitor, I want to be able to easily and quickly find to contact details again.
+  2. As a returning visitor, I want to be able to gain quick access the artists' up-to-date work.
 
-* #### Frequent Visitor Goals
+- #### Frequent Visitor Goals
 
-        1. As a frequent visitor, I want to be able to see if any new artists have been added to the studio.
+  1. As a frequent visitor, I want to be able to see if any new artists have been added to the studio.
 
 ---
 
-- ### Design
+### Design
 
 - #### Colour Scheme
 
   I initially chose a colour scheme of grey and pink but once I had applied the colours early on I decided that it did not work and did not provide the look I was going for. I then found a colour palette of shades of teal which I have used and also added to with selections of my own, complimented with gold accents, with black and white details to provide the necessary distinction between background and content.
   All colours are displayed within a commented section of my css so that if you need to change anything, you can make the changes in this section and it will apply to the classes, some of which cover repeated elements throughout the website.
 
-  I have used #013636 for the background of the navigation and footer elements.
-  Using a slightly lighter teal, #006666, for the background of all pages to distinguish the difference between header, footer and main section of the webpage.
+| Website Element                   | Colour           |
+| --------------------------------- |:----------------:|
+| Background of Navigation & Footer | #013636          |
+| Background of All Pages           | #006666          |
+| Page Titles                       | #011d1d          |
+| Body Text & Icons                 | White            |
+
+  I used a slightly lighter teal, for the background of all pages to distinguish the difference between header, footer and main section of the webpage.
   All text and icons are in white to ensure this is easily visible to the user.
-  I have used #011d1d for the page titles, I made this a little darker, again to really make the text distinguishable.
+  I have used a darker teal for the page titles, I made this a little darker than the below colours on the palette I had chosen, again to really make the text distinguishable.
 
 ![Black Rose Tattoo Colour Scheme](documentation/colour-palette.png)
 
 - #### Typography
+
   Google Fonts was used to import the chosen fonts for use on the site.
 
   - For the Page Title I have used the google font [Pirata One](https://fonts.google.com/specimen/Pirata+One?query=pirata+one) Pirata One is a font that is close to black lettering which is a calligraphy style commonly used by tattoo artists.
 
   ![Pirata One Font Example](documentation/pirata-one-example.png)
 
-  - I have also chosen [Montserrat](documentation/montserrat-example.png) as my other font, which is clear and easily readable.
+  - I have also chosen [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montserrat) as my other font, which is clear and easily readable.
+
+  ![Montserrat Font Example](documentation/montserrat-example.png)
+
+  I have also named the sans-serif font as a fallback font in case the other chosen fonts do not show for any reason.
 
 - #### Imagery
 
@@ -103,15 +112,16 @@ I wanted to create this website to improve on the aesthetics and accessibility f
 - #### Wireframes
 
   - Home Page Wireframes [Desktop](documentation/wireframes/home-wireframe.png) [Mobile](documentation/wireframes/home-mobile-wireframe.png)
+  - Meet The Artists Wireframe [Tablet](/documentation/wireframes/meet-the-artists-tablet-wireframe.png)
   - FAQ Page Wireframe [View](documentation/wireframes/faqs-wireframe.png)
   - Contact Us Page Wireframe [View](documentation/wireframes/contact-us-wireframe.png)
   - Booking In Page Wireframe [Desktop](documentation/wireframes/book-in-wireframe.png) [Mobile](documentation/wireframes/book-in-mobile-wireframe.png)
 
+  My website design has been slightly changed and tweaked from the original design on the wireframes, this is purely down to aesthetics.
+
 ## Technology Used
 
-This project is written using HTML & CSS using the Cloud IDE. I have also used flex-box and bootstrap to make the site responsive, and it is currently being hosted on GitHub.
-
-HTML & CSS has been ran through the W3 Validators with no errors.
+This project is written using HTML & CSS in Gitpod. I have also used flex-box and bootstrap to make the site responsive, and it is currently being hosted on GitHub.
 
 ## Features
 
@@ -131,6 +141,7 @@ For future implementations I would like to:
 2. Have a page which branches off into the other services that are offered at the studio; Laser removal and Semi-Permanent Makeup.
 3. Create a more detailed booking in form.
 4. Create a shop to sell all the artists merchandise.
+5. Improve performance of whole site.
 
 ### Accessibility
 
@@ -140,12 +151,13 @@ I have been trying to make the project and website as accessible as possible. I 
 * Using the hover element on all buttons on the site to make it known to the user that they are hovering over a button.
 * Making sure all pictures have an alt attribute.
 * Ensuring that there is a enough colour contrast throughout the site and the background (and background image) does not distract from the content.
+* Displaying appropriate title on page tab, so users can easily see where they are on the site, just by looking at the tab.
 
 ### Languages Used
 
 - HTML5
 - CSS3
-- Javascript
+- Javascript (Scripts copied from tutorials only to make certain elements work)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -167,7 +179,11 @@ I have been trying to make the project and website as accessible as possible. I 
     - Balsamiq was used to create wireframes.
    *[Google Developer Tools](https://developers.google.com/web/tools) 
    - To troubleshoot and test features, solve issues with responsiveness and styling.
-   *[Am I Responsive?](http://ami.responsivedesign.is/) To show the website home page image on a range of devices.
+   *[Am I Responsive?](http://ami.responsivedesign.is/)
+   - To show the website home page image on a range of devices.
+   *[Procreate](https://procreate.com/)
+   - Used to design the text logo and the mini logo for the header and footer.
+
 
 ## Deployment & Local Development
 
@@ -206,33 +222,139 @@ To clone the repository:
 
 - - -
 
-<!-- ## Testing
+## Testing
 
-Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+- #### First Time Visitor Goals
+
+  1. As a first time visitor, I want to be able to navigate through the site and find the content I want without difficulty.
+    1. Upon loading the home page, users are automatically presented with a simple, clean and easily readable navigation bar to go to the page of their choice, each navigation link states the page unambiguously and plainly, and displays a bottom border when the user hovers over it, providing feedback to the user that they are hovered over that page. Underneath there is a logo clearly displaying 'Black Rose Tattoo', so the user knows exactly where they are.
+    2. The navigation bar sticks to the top of each page when the user scrolls further down the page, so all pages are easily accessible at any point during the users' visit.
+    3. On the booking in page, there is a form to provide all information for the user to be able to book in effectively. On pressing submit, the user is redirected to a thank you page and the header and footer is accessible on this page so the user can take themselves back to any other page, if they wish.
+
+    [User Story 1](documentation/testing/user-stories/user-story-1-screenshot.png)
+
+  2. As a first time visitor, I want to be able to book in easily.
+    1. When the visitor loads the home page, within the nav bar at the top of the page there is a navigation link to the booking in page, or the user can scroll down to see an image of the studio that contains a centered booking in button, this means the user can access the booking in page from all pages, at any point within the page.
+    2. The booking in form itself is easy to read and simple to use with each text area appropriately labelled, what it is for. The input areas and checkbox all have the required attribute (apart from the uploading of reference photos which is not required), so the user can also ensure they are booked in effectively as all information is required by the studio.
+
+    [User Story 2](documentation/testing/user-stories/user-story-2-screenshot.png)
+
+  3. As a first time visitor, I want to have initial tattoo questions answered on a page so I don't have to contact anyone first.
+    1. The user can easily navigate to the clearly marked FAQ page from any page on the website. They can then view the questions via a collapsable element meaning they can just view the questions they require answers for.
+    2. Each question is a button which changes to a lighter colour to show feedback to the user as to which question they are currently hovering over. The user then needs to click on the question and the answer is expanded below.
+
+    [User Story 3 - Question Highlighted](documentation/testing/user-stories/user-story-3-screenshot.png)
+    [User Story 3 - Question Clicked](documentation/testing/user-stories/user-story-3-screenshot-2.png)
+
+  4. As a first time visitor, I would like to view current/existing work by the artist.
+    1. The user can navigate to the 'Meet The Artists' page, whereby they will find links to the artists' social media and a sneak peak an example of each artists' work.
+    2. The links to each artists Instagram are clearly marked underneath each artist picture and introduction. These links have been coded to open into a new tab so the user isn't taken away from the main website completely.
+
+    [User Story 4](documentation/testing/user-stories/user-story-4-screenshot.png)
+
+- #### Returning Visitor Goals
+
+  1. As a returning visitor, I want to be able to easily and quickly find to contact details again.
+    1. The user can go straight to the contact page by going through the navigation link 'Contact Us' at the top of the page or they can obtain information straight away by going to the footer in place on every page, where it has become a standard practice to provide this information.
+
+  2. As a returning visitor, I want to be able to gain quick access the artists' up-to-date work.
+    1. The user can either visit the studios Instagram, which is represented by an icon on the footer of each page, or they can visit the 'Meet The Artists' page and go to the specific artists' instagram which is shown as a link under the artists' picture and introduction.
+
+    [Returning User Story](documentation/testing/user-stories/returning-user-story-screenshot.png)
+
+- #### Frequent Visitor Goals
+
+  1. As a frequent visitor, I want to be able to see if any new artists have been added to the studio.
+    1. Any new artists will be added to the list of artists on the 'Meet The Artists' page, which is self explanatory and would jump out at the user as being the first place to check.
+
+### Further Testing
+  All webpages have been validated against the W3 online validation sites which have come back with no errors or warnings, and I have checked compatibilities across various devices and a few different web browsers.
+
+  Testing was carried out throughout the building of the website. I used Chrome developer tools whilst building help troubleshoot any issues I came across.
+
+  I viewed each page of the website using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
+
+  - #### Full Testing
+
+  ##### Home Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Site Mini Logo's | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Navigation Links | Links direct user to appropriate page | Clicked each link | Each link takes user to correct page | Pass |
+| Book In Button | Takes user to booking in page | Clicked on booking in button | Booking in page is loaded | Pass |
+| Book In Button Hover Effect | Button turns to a darker shade of teal when user hovers over it | Hover over booking in button | Button shows correct colour when hovering over it | Pass |
+| Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
+| Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
+
+  ##### Meet The Artists
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Site Mini Logo's | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Navigation Links | Links direct user to appropriate page | Clicked each link | Each link takes user to correct page | Pass |
+| Links for each artist | Opens each link in a new tab, email link opens new email in users default programme | Clicked on each link | Both webpage links open into a new tab displaying appropriate page and email opens a new email in Outlook | Pass |
+| Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
+| Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
+
+  ##### FAQs
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Site Mini Logo's | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Navigation Links | Links direct user to appropriate page | Clicked each link | Each link takes user to correct page | Pass |
+| Question Button | Expands answer below when clicked | Clicked on each question button | Answers are displayed correctly below question | Pass |
+| Question Button Hover Effect | Button turns to a lighter shade of teal when user hovers over it | Hover over each question button | Button shows correct colour when hovering over it | Pass |
+| Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
+| Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
+
+  ##### Contact Us
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Site Mini Logo's | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Navigation Links | Links direct user to appropriate page | Clicked each link | Each link takes user to correct page | Pass |
+| Email the Studio Link | Link opens new email | Clicked on link | A new email is opened in Outlook | Pass |
+| Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
+| Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
+
+  ##### Book In
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Site Mini Logo's | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Navigation Links | Links direct user to appropriate page | Clicked each link | Each link takes user to correct page | Pass |
+| Buttons For All Email Links | Opens a new email to either studio or artists address | Clicked on each picture button | A new email opens in Outlook | Pass |
+| Form | Once user has filled in all required inputs, ticked check box and pressed submit, user taken to thank you page | Filled in all text areas, ticked checkbox and clicked on submit button | Directs user to thank you page | Pass |
+| Clear Form Button | Removes inputted text from all text inputs | Clicked on button | All information removed | Pass |
+| Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
+| Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
+
+
+- #### Chrome DevTools Audit Report
+  The Google Page-speed Services were used to assess the accessibiity of the project to ensure the site met expected accessible standards on desktop and mobile. The performance on my website could be better and this could be improved upon on future releases - the project scored highly in all other areas.
+
+  [Lighthouse Result](documentation/testing/lighthouse-results.png)
+
+- #### Browser Testing
+  - The Website has been tested on Google Chrome, Safari, and Microsoft Edge.
+  - The website was tested on my iPhone 12 mobile and 27" Microsoft PC devices. All other responsive testing was completed online.
+  - Testing has been completed to ensure that all pages were linking correctly and external links opened in a new tab.
+
 
 ### Solved Bugs
 
-| No | Bug | How I solved the issue |
+| No   | Bug  | How I solved the issue |
 | :--- | :--- | :--- |
-| 1 | An error was displaying in the console when next was clicked after the first question, stating that results wasn't defined. | Data was defined in the callApi(), so couldn't be accessed as it was in local scope rather than global scope. By defining data globally and then passing the data as a parameter into the getQuestion() in the nextQuestion() solved this. |
-| 2 | The Questions being pulled in from the JSON have HTML entity characters that are not escaped and therefore display incorrectly with symbols in place of the correct characters. ![Characters not escaping correctly in the JSON data](documentation/characters-not-escaped.webp) | After a lot of research into escaping characters, I came across a post on slack that mentioned using innerHTML rather than innerText. Once I changed the answers to innerHTML the characters are now displaying correctly. |
-| 3 | I have the local storage set up to save the final score as mostRecentScore. However when completing a game and submitting the team name the score added to the high scores section would be the previous score and not the most recent score. | After a lot of research to try and find out why this was happening I went over the code again and decided to see if I changed mostRecentScore in the scoreLog to score it would make a difference. By changing this, I have solved the issue and it now pulls the most recent score achieved. |
-| 4 | Players were able to select an answer which would then display whether correct or incorrect. However they could still click on the answers which meant they could click all the answers to receive the points.| I researched a way to disable the buttons and initially found that I could use answer1.disabled = true; This worked, however it added quite a bit of code, as I had to add this for each button. Further research led me to find [this article](https://blog.revillweb.com/jquery-disable-button-disabling-and-enabling-buttons-with-jquery-5e3ffe669ece) which showed how to use jQuery and the class on the buttons to enable and disable them all at the same time. This then allows me to enable the buttons when a new question has been populated and once a selection has been made, the answer buttons are disabled until the user clicks next to advance onto the next question. |
-| 5 | There was an issue with the data-correct not always being removed correctly from questions, which meant that incorrect answers were displaying as correct | I changed the way the data-correct attribute was removed from the answers, by using the same a for loop similar to what was used to add the data-correct attribute. I also changed the for innerText in the for loop to be innerHTML so that it was correctly reading the same as what was displayed on the button. |
-| 6 | If a user selected an incorrect answer and the correct answer contained HTML entity characters (such as /&#(\d+);/g) the correct button styling would not be applied to the displayCorrectAnswer variable and a error would display in the console. This would then prevent the user from progressing in the quiz as the next button would not display for them to move on.![Bug 6](documentation/bug-6.png) | I adjusted line 161 to use innerHTML rather than innerText, however the issue persisted. I looked for an answer online but struggled to find anything that would help. I then reached out to Bim Williams on Slack who is an alumni on the course and asked to run the problem past him. He suggested adding a function that would decode the HTML entity and then apply that function within line 161. The function takes the HTML entity characters and replaces them with the correct characters. I will be researching this topic further in my spare time to gain a deeper understanding of it. |
+| 1 | After reading that Bootstrap was not required for this project on the Slack channels I was trying to work without the bootstrap framework and found it extremely difficult to code a completely HTML and CSS hamburger menu ![CSS hamburger menu not working properly](/documentation/testing/css-hamburger-bug.png)| After speaking with my tutor, she suggested that I could use the bootstrap framework just for the menu and that would be acceptable for the project, I read the documentation on the Bootstrap navigation element and implemented this into my site |
+| 2 | For the contact page, I wanted a map to be at the bottom of the content on that page and also for it to be responsive, I had placed an embedded map but it was only one size and did not look good within other device sizes | I typed my query into google and found a good [tutorial](https://www.w3schools.com/howto/howto_css_responsive_iframes.asp) on W3 schools which showed my how to style the class for the map|
+| 3 | The font for the navigation links would not change to the particular font I wanted | I researched this and managed to find [this article](https://forum.squarespace.com/topic/253132-custom-css-not-overriding-font-styles-site-nav-links/) where I learnt about the !important attribute and fixed this issue. This attribute was then used for other elements |
 
 ### Known Bugs
 
-* When viewing on screens that use touch rather than a cursor, the colour change for the answer button selected is not immediately obvious as the hover state remains on the button. If the user clicks away from the button the colour can then been seen.
+* When testing was carried out on an Iphone 12 mobile, the booking in form does not display correctly; the title is off center, the checkbox is left aligned for some reason and users have to scroll to the right slightly to view the end of the text box. This is all displayed correctly when viewing on a desktop and reducing the screen size either just through the browser or through devtools.
 
-  ![Touch Button Colour](documentation/touch-button-colour.gif)
-
-* There is a a warning displaying in the console on the live page. This error seems to be because GitHub hosted pages disable googles 3rd party cookie alternative FLoC, which then throws this error. The error doesn't affect the site in any way.
-
-  ![Console warning](documentation/interest-cohort-error.png)
-
-* When friends tested the site they found that very rarely a game will get stuck on a question, and it will not populate a new question but the question no counter continues to increase. This issue only seems to be if a large number of games are played consecutively, possibly using up the questions in the API. I have not been able to replicate this issue to troubleshoot further.
-  ![Question overloaded](documentation/questions-depleted.gif)-->
+  ![Form not displaying correctly](/documentation/testing/mobile-form-screenshot.png)
 
 - - -
 
@@ -242,13 +364,13 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 * I used [This Tutorial](https://forum.squarespace.com/topic/253132-custom-css-not-overriding-font-styles-site-nav-links/) where I learned how to make css !important to over-ride other applied css styles.
 
-* I read [Bootstrap documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/) to find out about the navigation element, in order to make it responsive.
+* I read [Bootstrap documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/) to learn about the responsive navigation element, in order to make it change to the hamburger menu for smaller screen sizes than laptops.
 
-* I played the [Flexbox Froggy](https://flexboxfroggy.com/) in combination with [This Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in order to teach myself how to use Flexbox.
+* I utilised the [Flexbox Froggy](https://flexboxfroggy.com/) game in combination with [This Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in order to teach myself how to use Flexbox.
 
 * I used this [video tutorial](https://www.youtube.com/watch?v=N5wpD9Ov_To) on YouTube by [Kevin Powell](https://www.youtube.com/@KevinPowell) to ensure I was using the correct units within my css.
 
-* I used [This Tutorial](https://stackoverflow.com/questions/31379175/bootstrap-button-on-click-showing-default-colour) which showed me how to change button colour once pressed, for the booking in button on the main home page.
+* I found [This Tutorial](https://stackoverflow.com/questions/31379175/bootstrap-button-on-click-showing-default-colour) which showed me how to change button colour once pressed, for the booking in button on the main home page.
 
 * I used [This Tutorial](https://www.w3schools.com/howto/howto_js_collapsible.asp) to learn how to make collapsable questions on the FAQs page.
 
@@ -264,7 +386,9 @@ I would like to acknowledge the following people:
 
 * Niclas_5P_Lead - On the Code Institute slack channels, who provided me with thorough help and advice.
 
-* The Code Institute Tutors who provided me with guidance and helpful hints and tips.
+* Tutor Support at Code Institute - Who provided me with guidance and learning materials, helpful hints and tips.
 
-* Rachel Furlong - My college tutor, who kept an eye on how I was doing and provided reassurance.
+* Rachel Furlong - My college tutor, who maintained contact throughout the project and provided reassurance.
+
+* Jubril Akolade - My mentor, who provided me with guidance and reassurance.
 

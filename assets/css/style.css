@@ -22,6 +22,10 @@
     margin-top: 1rem;
 }
 
+body {
+    font-family: Monserrat, sans-serif;
+}
+
 /*--------------------------------------------Heading*/
 
 #text-logo {
