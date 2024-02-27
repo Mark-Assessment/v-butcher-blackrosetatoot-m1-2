@@ -24,8 +24,12 @@ Visit the deployed website: [Black Rose Tattoo](https://veebee4.github.io/blackr
   * [JavaScript Validator](#javascript-validator)
   * [Chrome DevTools Audit Report](#chrome-devtools-audit-report)
 
+  - - -
+
   I carried out testing throughout the project, by using Chrome developer tools I was able to troubleshoot as the project was being built.
   All pages have been viewed in the Chrome developer tools to ensure each page is responsive on different device and screen sizes.
+
+  - - - 
 
 ## MANUAL TESTING
 
@@ -134,21 +138,19 @@ Visit the deployed website: [Black Rose Tattoo](https://veebee4.github.io/blackr
 
 ### W3C Validator
 
-    [W3C] was used to validate all HTML & CSS code.
+  [W3C](https://validator.w3.org/) was used to validate all HTML & CSS code.
 
-    | Page | Result |
-    | --- | --- |
-    | index.html | Passed - [Result](documentation/testing/w3c-index.png) |
-    | meet-the-artists.html | Passed - [Result](documentation/testing/w3c-meet-artists.png) |
-    | faqs.html | Passed - [Result](documentation/testing/w3c-faqs.png)
-    | contact-us.html | Passed - [Result](documentation/testing/w3c-contact.png) |
-    | book-in.html | Passed - [Result](documentation/testing/w3c-book.png) |
-    | style.css | Passed - [Result](documentation/testing/w3c-css.png)
+  * index.html - Passed - [Result](documentation/testing/w3c-index.png)
+  * meet-the-artists.html - Passed - [Result](documentation/testing/w3c-meet-artists.png)
+  * faqs.html - Passed - [Result](documentation/testing/w3c-faqs.png)
+  * contact-us.html - Passed - [Result](documentation/testing/w3c-contact.png)
+  * book-in.html - Passed - [Result](documentation/testing/w3c-book.png)
+  * style.css - Passed - [Result](documentation/testing/w3c-css.png)    
 
-### Javascript Validator
+### JavaScript Validator
 
-    [JSHint](https://jshint.com) was used to validate the small amount of Javascript within the project.
-    ![Javascript Validator Results](documentation/testing/javascript-validator.png)
+[jshint](https://jshint.com/) was used to validate the small amount of Javascript within the project.
+![JavaScript Validator Results](documentation/testing/javascript-validator.png)
 
 ### Chrome DevTools Audit Report
 

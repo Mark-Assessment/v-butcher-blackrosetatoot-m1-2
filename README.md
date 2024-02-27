@@ -127,10 +127,20 @@ This project is written using HTML & CSS in Gitpod. I have also used flex-box an
 The website comprises of a homepage, meet the artists page to introduce the artists working at the studio, an faq page, along with a contact and booking in page. The form on the booking in page re-directs to a thank you page once the form has been filled in and the submit button has been pressed.
 
 - Responsive on all devices, using a mobile first approach.
+![Mobile, tablet & desktop view](documentation/testing/responsive-features-screenshot.png)
+
 - Interactive Menus and links on all pages.
 - Street Map.
+![Menu](documentation/testing/interactive-menu-screenshot.png)
+![Links](documentation/testing/link-screenshot.png)
+![Social Links](documentation/testing/social-screenshot.png)
+![Map](documentation/testing/link-map-screenshot.png)
+
 - Small logo's on the header and footer that act as a link back to the home page.
-- Main logo that appears on every page.
+![Small Logo's](documentation/testing/small-logos-screenshot.png)
+
+- User feedback on FAQ page when question is hovered over.
+![Hover Over Question](documentation/testing/faq-hover-screenshot.png)
 
 #### Future Implementations
 
@@ -230,14 +240,18 @@ To clone the repository:
 | No   | Bug  | How I solved the issue |
 | :--- | :--- | :--- |
 | 1 | After reading that Bootstrap was not required for this project on the Slack channels I was trying to work without the bootstrap framework and found it extremely difficult to code a completely HTML and CSS hamburger menu ![CSS hamburger menu not working properly](/documentation/testing/css-hamburger-bug.png)| After speaking with my tutor, she suggested that I could use the bootstrap framework just for the menu and that would be acceptable for the project, I read the documentation on the Bootstrap navigation element and implemented this into my site |
-| 2 | For the contact page, I wanted a map to be at the bottom of the content on that page and also for it to be responsive, I had placed an embedded map but it was only one size and did not look good within other device sizes | I typed my query into google and found a good [tutorial](https://www.w3schools.com/howto/howto_css_responsive_iframes.asp) on W3 schools which showed my how to style the class for the map|
+| 2 | For the contact page, I wanted a map to be at the bottom of the content on that page and also for it to be responsive, I had placed an embedded map but it was only one size and did not look good within other device sizes | I typed my query into google and found a good [tutorial](https://www.w3schools.com/howto/howto_css_responsive_iframes.asp) on W3 schools which showed how to style the class for the map|
 | 3 | The font for the navigation links would not change to the particular font I wanted | I researched this and managed to find [this article](https://forum.squarespace.com/topic/253132-custom-css-not-overriding-font-styles-site-nav-links/) where I learnt about the !important attribute and fixed this issue. This attribute was then used for other elements |
 
 ### Known Bugs
 
 * When testing was carried out on an Iphone 12 mobile, the booking in form does not display correctly; the title is off center, the checkbox is left aligned for some reason and users have to scroll to the right slightly to view the end of the text box. This is all displayed correctly when viewing on a desktop and reducing the screen size either just through the browser or through devtools.
 
-  ![Form not displaying correctly](documentation/testing/mobile-form-screenshot.png =500x300)
+  <img src="documentation/testing/mobile-form-screenshot.png" height="500" width="300">
+
+* I noticed the border style that I had applied to the menu links, applies itself to the full width on the hamburger menu but only appears under the navigation link on the full desktop menu. This could be rectified just by spending further time on the project.
+
+![Menu bottom border bug](documentation/testing/border-menu-bug.png)
 
 - - -
 
@@ -279,5 +293,5 @@ I would like to acknowledge the following people:
 
 * Rachel Furlong - My college tutor, who maintained contact throughout the project and provided reassurance.
 
-* Jubril Akolade - My mentor, who provided me with guidance and reassurance.
+* Jubril Akolade - My mentor, who provided me with great guidance and reassurance.
 
