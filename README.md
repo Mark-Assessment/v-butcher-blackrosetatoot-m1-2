@@ -247,9 +247,9 @@ To clone the repository:
 
 * When testing was carried out on an Iphone 12 mobile, the booking in form does not display correctly; the title is off center, the checkbox is left aligned for some reason and users have to scroll to the right slightly to view the end of the text box. This is all displayed correctly when viewing on a desktop and reducing the screen size either just through the browser or through devtools.
 
-  <img src="documentation/testing/mobile-form-screenshot.png" height="500" width="300">
+  <img src="documentation/testing/mobile-form-screenshot.png" height="500">
 
-* I noticed the border style that I had applied to the menu links, applies itself to the full width on the hamburger menu but only appears under the navigation link on the full desktop menu. This could be rectified just by spending further time on the project.
+* I noticed the border style that I had applied to the menu links, applies itself to the full width on the hamburger menu but on the full desktop menu, the border is only as long as the navigation link word. This could be rectified just by spending further time on the project.
 
 ![Menu bottom border bug](documentation/testing/border-menu-bug.png)
 
@@ -291,7 +291,7 @@ I would like to acknowledge the following people:
 
 * Tutor Support at Code Institute - Who provided me with guidance and learning materials, helpful hints and tips.
 
-* Rachel Furlong - My college tutor, who maintained contact throughout the project and provided reassurance.
+* Rachel Furlong - My college tutor, who maintained contact throughout the project and provided good guidance and reassurance.
 
 * Jubril Akolade - My mentor, who provided me with great guidance and reassurance.
 

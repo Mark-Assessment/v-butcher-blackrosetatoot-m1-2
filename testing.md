@@ -149,7 +149,7 @@ Visit the deployed website: [Black Rose Tattoo](https://veebee4.github.io/blackr
 
 ### JavaScript Validator
 
-[jshint](https://jshint.com/) was used to validate the small amount of Javascript within the project.
+[jshint](https://jshint.com/) was used to validate the small amount of Javascript within the project - Passed with no warnings/errors.
 ![JavaScript Validator Results](documentation/testing/javascript-validator.png)
 
 ### Chrome DevTools Audit Report
