@@ -130,6 +130,7 @@ Visit the deployed website: [Black Rose Tattoo](https://veebee4.github.io/blackr
 | Navigation Links | Links direct user to appropriate page | Clicked each link | Each link takes user to correct page | Pass |
 | Buttons For All Email Links | Opens a new email to either studio or artists address | Clicked on each picture button | A new email opens in Outlook | Pass |
 | Form | Once user has filled in all required inputs, ticked check box and pressed submit, user taken to thank you page | Filled in all text areas, ticked checkbox and clicked on submit button | Directs user to thank you page | Pass |
+| Form | If user puts whitespace instead of text into text inputs displays error to user | Entered three spaces into each box | Displays error - "Please match the requested format" and does not let the user submit the form information | Pass |
 | Clear Form Button | Removes inputted text from all text inputs | Clicked on button | All information removed | Pass |
 | Laser By Stephania Logo/Button | Opens Laser by Stephania booking page in a new tab | Clicked on logo/button | A new tab opens and loads the correct page | Pass |
 | Social Media Icons | Opens a new tab to each social media account for the studio | Clicked on each icon | A new tab opens and loads the correct pages | Pass |
